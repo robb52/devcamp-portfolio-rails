@@ -52,7 +52,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Post was remove.d' }
+      format.html { redirect_to blogs_url, notice: 'Post was removed' }
       format.json { head :no_content }
     end
   end
