@@ -53,4 +53,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'bootstrap', '~> 4.0.0'
-gem "brown_view_tool", git: "https://github.com/robb52/brown_view_tool"
+gem 'r_b_view_tool', git: 'https://github.com/robb52/r_b_view_tool'
