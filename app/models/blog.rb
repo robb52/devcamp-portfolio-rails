@@ -5,7 +5,7 @@ class Blog < ApplicationRecord
 
   validates_presence_of :title, :body
 
-  belongs_to :topic
+  belongs_to :topic, optional: true
 
   has_many :comments, dependent: :destroy
 
@@ -13,4 +13,3 @@ class Blog < ApplicationRecord
     all
   end
 end
-
