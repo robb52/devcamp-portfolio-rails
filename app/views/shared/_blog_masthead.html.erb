@@ -1,7 +1,11 @@
 <div class="blog-header">
   <div class="container">
     <h1 class="blog-title">My Blog</h1>
-    <p class="lead blog-description">An example</p>
-    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    <p class="lead blog-description">An example</p>  
+
+    <div class="button">
+      <%= link_to 'Write a New Blog', new_blog_path, class: "btn btn-outline-primary btn-sm" %> 
+      <%= link_to 'Topics', topics_path, class: "btn btn-outline-primary btn-sm" %>
+    </div>
   </div>
 </div>
