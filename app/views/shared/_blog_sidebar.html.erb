@@ -3,7 +3,13 @@
     <h4>About</h4>
     Add your info here!
     <p>sdlghlshgli</p>
+  </div>
 
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+    <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
   </div>
 
   <div class="p-3">
