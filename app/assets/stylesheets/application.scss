@@ -138,7 +138,7 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: float;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -227,5 +227,11 @@ margin-right: 15px;
 }
 
 .app-card-container-contact {
-  text-shadow: 3px 3px 3px blue;
+  color: black;
+  text-shadow: 3px 3px 3px white;
+}
+
+.card-body {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
