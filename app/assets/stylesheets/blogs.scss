@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Raleway', sans-serif;
   color: #555;
 }
 
@@ -22,8 +22,8 @@ h2,
 h3, 
 h4, 
 h5, 
-h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+h6,{
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -60,7 +60,7 @@ h6 {
 .navbar-expand-lg .navbar-collapse {
   display: flex !important;
   flex-basis: auto;
-  padding-left: 95px;
+  padding-left: 75px;
 }
 .nav-link:hover,
 .nav-link:focus {
