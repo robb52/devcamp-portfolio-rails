@@ -3,6 +3,7 @@ class BlogsController < ApplicationController
   before_action :set_sidebar_topics, except: [:update, :create, :destroy, :toggle_status]
   layout "blog"
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
+  
 
   # GET /blogs
   # GET /blogs.json
@@ -12,7 +13,7 @@ class BlogsController < ApplicationController
     else
       @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
-      @page_title = "My Portfolio Blog"
+    @page_title = "My Portfolio Blog"
   end
 
   # GET /blogs/1
@@ -69,7 +70,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-      format.html { redirect_to blogs_url, notice: 'Post was removed' }
+      format.html { redirect_to blogs_url, notice: 'Post was removed.' }
       format.json { head :no_content }
     end
   end
@@ -77,11 +78,11 @@ class BlogsController < ApplicationController
   def toggle_status
     if @blog.draft?
       @blog.published!
-      elsif @blog.published?
-        @blog.draft!
-      end 
-
-    redirect_to blogs_url, notice: 'Post status has been updated'
+    elsif @blog.published?
+      @blog.draft!
+    end
+        
+    redirect_to blogs_url, notice: 'Post status has been updated.'
   end
 
   private

@@ -8,6 +8,7 @@
 @media (min-width: 48em) {
   html {
     font-size: 18px;
+
   }
 }
 
@@ -56,6 +57,11 @@ h6 {
   font-weight: 500;
   color: #cdddeb;
 }
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  padding-left: 95px;
+}
 .nav-link:hover,
 .nav-link:focus {
   color: #fff;
@@ -66,6 +72,7 @@ h6 {
 .nav-link.active {
   color: #fff;
 }
+
 .nav-link.active:after {
   position: absolute;
   bottom: 0;
@@ -90,7 +97,6 @@ h6 {
   margin-bottom: 2rem;
   border-bottom: .05rem solid #eee;
   }
-
 .blog-title {
   margin-bottom: 0;
   font-size: 2rem;
@@ -209,3 +215,4 @@ font-size: 2.5em;
 .blog-sidebar-source {
   margin-top: 20px;
 }
+

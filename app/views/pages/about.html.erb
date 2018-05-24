@@ -7,7 +7,23 @@
 
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "portfolio.jpg", width: "250", alt: "profile image", class: 'profile-img' %>
+        <%= image_tag "portfolio.jpg", width: 250, alt: "profile image", class: 'profile-img' %>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h5><%= skill.title %></h5>
+              <div class="progress">
+                <div 
+                class="progress-bar progress-bar-striped bg-success"
+                role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>           
+          <% end %>
+        </div>
       </div>
 
       <div class="col-md-8">
@@ -18,9 +34,9 @@
             class="btn btn-outline-primary"
             type="button"
             data-toggle="collapse"
-            data-target="#JobHistory"
+            data-target="#jobHistory"
             aria-expanded="false"
-            aria-controler="jobhistory"
+            aria-controler="jobHistory"
           >
             Job History
           </button>
@@ -40,16 +56,16 @@
             class="btn btn-outline-primary"
             type="button"
             data-toggle="collapse"
-            data-target="#skills"
+            data-target="#sample"
             aria-expanded="false"
-            aria-controler="skills"
+            aria-controler="sample"
           >
-            Skills
+            Sample
           </button>
         </p>
 
         <p>
-          <div class="collapse" id="JobHistory">
+          <div class="collapse" id="jobHistory">
             <div class="card card-body">
               Job 1
             </div>
@@ -67,12 +83,12 @@
             </div>
           </div>
 
-          <div class="collapse" id="skills">
+          <div class="collapse" id="sample">
             <div class="card card-body">
-              Skills 1
+              Sample 1
             </div>
             <div class="card card-body">
-              Skills 2
+              Sample 2
             </div>
           </div>
         </p>
