@@ -6,7 +6,7 @@ User.create!(
   roles: "site_admin"
   )
   
-  puts "1 Admin user created"
+puts "1 Admin user created"
   
 User.create!(
   email: "tes2@test.com",
@@ -15,8 +15,7 @@ User.create!(
   name: "Regular User",
   )
  
-  puts "1 regular user created"
-
+puts "1 regular user created"
 
 3.times do |topic|
   Topic.create!(

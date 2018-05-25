@@ -21,4 +21,3 @@ class Blog < ApplicationRecord
     order("created_at DESC")
   end
 end
-
