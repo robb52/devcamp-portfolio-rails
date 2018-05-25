@@ -30,11 +30,21 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+font-family: 'Lato', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -87,7 +97,8 @@ body {
 }
 
 .nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
+  margin-left: 2rem;
+
 }
 
 .nav-masthead .active {
@@ -98,6 +109,7 @@ body {
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
+    padding-left: 128px;
   }
   .nav-masthead {
     float: right;
@@ -138,7 +150,7 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: float;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -208,3 +220,36 @@ margin-right: 15px;
   color: white;
 }
 
+.app-card-container {
+  padding-top: 125px;
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 25px;
+}
+
+.profile-img {
+  border: 1px solid black;
+}
+
+.app-card-container-contact a {
+  text-shadow: 0px 0px 0px;
+  color: blue;
+}
+
+.app-card-container-contact {
+  color: black;
+  text-shadow: 3px 3px 3px white;
+}
+
+.card-body {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

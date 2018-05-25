@@ -8,11 +8,12 @@
 @media (min-width: 48em) {
   html {
     font-size: 18px;
+
   }
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Raleway', sans-serif;
   color: #555;
 }
 
@@ -21,8 +22,8 @@ h2,
 h3, 
 h4, 
 h5, 
-h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+h6,{
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -56,6 +57,11 @@ h6 {
   font-weight: 500;
   color: #cdddeb;
 }
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  padding-left: 75px;
+}
 .nav-link:hover,
 .nav-link:focus {
   color: #fff;
@@ -66,6 +72,7 @@ h6 {
 .nav-link.active {
   color: #fff;
 }
+
 .nav-link.active:after {
   position: absolute;
   bottom: 0;
@@ -90,7 +97,6 @@ h6 {
   margin-bottom: 2rem;
   border-bottom: .05rem solid #eee;
   }
-
 .blog-title {
   margin-bottom: 0;
   font-size: 2rem;
@@ -191,3 +197,27 @@ font-size: 2.5em;
 .comment-name {
   font-weight: 700;
 }
+
+.icon {
+  position: absolute;
+  right: 35px;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-nav {
+  margin-bottom: 30px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}
+
+.navbar_brand {
+  font-size: 1.5rem;
+  color: #0033FF;
+}
+
